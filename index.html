@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OjiQR-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1>Generate QR-Code</h1>
+            <input type="text" placeholder="Enter your Text or URL" id="qr-text">
+            <div>
+                <label for="sizes">Select Size</label>
+                <select name="Hello" id="sizes">
+                    <option value="200">200&times;200</option>
+                    <option value="32">32&times;32</option>
+                    <option value="64">64&times;64</option>
+                    <option value="128">128&times;128</option>
+                    <option value="256">256&times;256</option>
+                    <option value="512">512&times;512</option>
+                    <option value="1024">1024&times;1024</option>
+                </select>
+            </div>
+        </div>
+        <div class="qr-body">
+
+        </div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Generate</a>
+            <a href="" id="downloadBtn" download="QR-Code.png">Download</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
